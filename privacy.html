@@ -18,7 +18,7 @@
   <main class="legal">
     <div class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective November 23, 2026</p>
+      <p class="meta">Effective November 23, 2026 · Updated November 24, 2026</p>
 
       <p>This policy explains what information the What-If Studio add-on for Google Sheets™ ("What-If Studio", "the add-on") uses, and how. What-If Studio is made by Cellwise Labs, a trade name of Deadline Wallet LLC ("we", "us"). The short version: your spreadsheet data stays in Google, and we never see it.</p>
 
@@ -27,7 +27,7 @@
       <ul>
         <li><b>View and manage spreadsheets that this application has been installed in.</b> The add-on only works with the spreadsheet you open it in. It reads the cells you choose (for example, your formula and input cells) and writes results back into that spreadsheet.</li>
         <li><b>Display and run third-party web content in prompts and sidebars inside Google applications.</b> This shows the add-on's sidebar.</li>
-        <li><b>Connect to an external service.</b> This is used only to check a Pro license key with our payment provider, Polar (see section 3).</li>
+        <li><b>Connect to an external service.</b> This is used only to check a Pro license key with our payment provider, Polar (see sections 3 and 4).</li>
       </ul>
       <p>When you install any add-on from the Google Workspace Marketplace, Google may also show that the add-on can see your email address and basic profile. What-If Studio does not read, store or use your email address or profile.</p>
 
@@ -40,21 +40,45 @@
       <p>All of this is stored by Google. We cannot see your spreadsheets, your scenarios or your data table contents.</p>
 
       <h2>3. What leaves Google</h2>
-      <p>The only information the add-on sends outside Google is your <b>license key</b> and a short <b>activation label</b>, sent to Polar (api.polar.sh) when you activate Pro and about once a day after that to confirm the license is still valid. No spreadsheet contents are ever sent.</p>
+      <p>The only information the add-on sends outside Google is your <b>license key</b> and a short <b>activation label</b>. These go to Polar (api.polar.sh), our payment provider, when you activate Pro, about once a day after that to confirm the license is still valid, and when you remove the license.</p>
+      <p>The activation label reads "Google Sheets add-on" followed by the first 8 characters of a temporary, anonymous key that Google gives the add-on for each user. Google changes this key every 30 days. It doesn't include your name, your email address or anything from your spreadsheets. No spreadsheet contents are ever sent outside Google.</p>
 
-      <h2>4. Purchases</h2>
+      <h2>4. Who we share, transfer or disclose Google user data with</h2>
+      <p>"Google user data" means the information the add-on gets through Google's APIs: the cells it reads and writes in your spreadsheet, its data table settings and saved scenarios, and the license details it stores in your Google account.</p>
+      <ul>
+        <li><b>We do not sell, rent, share, transfer or disclose Google user data to third parties.</b> We don't share it with advertisers, data brokers or analytics companies.</li>
+        <li><b>Google.</b> The add-on runs entirely on Google's own infrastructure (Google Apps Script), so Google processes and stores this data on your behalf under its own terms.</li>
+        <li><b>Polar, our payment provider.</b> Polar receives only your license key and the activation label described in section 3, and only to activate and check your Pro license. Polar never receives spreadsheet contents.</li>
+        <li><b>Us, for error reports.</b> If the add-on hits an error, the technical error message (which can include a sheet name or cell reference, but not your spreadsheet's contents) is saved to our private Google Cloud error log. Only we can see it, and we use it only to fix bugs.</li>
+        <li><b>When the law requires it.</b> We disclose information only if required by law, such as a valid court order, and only what is legally required.</li>
+        <li><b>If the business changes hands.</b> If Cellwise Labs or What-If Studio is sold or merged, information may transfer to the new owner. It would remain covered by this policy, and we would tell you first on our website.</li>
+      </ul>
+      <p>We do not use Google user data for advertising, and we do not use it to train or improve any AI or machine-learning model. No person reads your spreadsheet data. The only exception is something you choose to send us yourself, such as a screenshot in a support email.</p>
+
+      <h2>5. How we protect your data</h2>
+      <ul>
+        <li><b>Your data stays on Google's servers.</b> We don't run our own servers or databases, and we keep no copies of your spreadsheets, scenarios or data tables. Google encrypts this data in transit and at rest.</li>
+        <li><b>The narrowest spreadsheet permission.</b> The add-on can only open the spreadsheet you're using it in. It can't see your other files.</li>
+        <li><b>Private license storage.</b> Your license key and activation ID are kept in Google's private per-user storage for this add-on. Only the add-on, running under your own Google account, can read them, and other people using the same spreadsheet can't see them.</li>
+        <li><b>Encrypted, restricted connections.</b> The license check uses an encrypted HTTPS connection. The add-on's settings (its manifest) block it from contacting any address other than api.polar.sh.</li>
+        <li><b>Limited access on our side.</b> Only the owner of Cellwise Labs can access our developer accounts and error logs. Google deletes error logs automatically after a limited time (about 30 days).</li>
+        <li><b>No card details.</b> Payments are handled entirely by Polar and its payment processor. We never see or store full card numbers.</li>
+      </ul>
+      <p>If you think you've found a security problem, please email <a href="mailto:support@cellwiselabs.com">support@cellwiselabs.com</a>.</p>
+
+      <h2>6. Purchases</h2>
       <p>Pro subscriptions are sold through Polar, which acts as the merchant of record and processes payments. Polar collects your payment details and email address under its own privacy policy. We receive order information from Polar (such as your name, email address, country and what you bought) so we can manage your license and help you. We never receive your full card details.</p>
 
-      <h2>5. Error reports and support emails</h2>
-      <p>If the add-on hits an error, Google's error logging may record a technical error message so we can fix bugs. These messages can include technical details such as a sheet name or cell reference, but not your spreadsheet's contents. When you email us, we keep your message and our reply to help you.</p>
+      <h2>7. Error reports and support emails</h2>
+      <p>If the add-on hits an error, Google's error logging records a technical error message in our private Google Cloud error log so we can fix bugs (see sections 4 and 5). These messages can include technical details such as a sheet name or cell reference, but not your spreadsheet's contents. When you email us, we keep your message and our reply to help you.</p>
 
-      <h2>6. How we use information</h2>
+      <h2>8. How we use information</h2>
       <p>We use the information above only to provide and support What-If Studio, manage licenses and fix problems. We do not sell your information, use it for advertising, or use it to train AI models.</p>
 
-      <h2>7. Google user data</h2>
+      <h2>9. Google API Services User Data Policy</h2>
       <p>What-If Studio's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-      <h2>8. Keeping and deleting data</h2>
+      <h2>10. Keeping and deleting data</h2>
       <ul>
         <li>To delete data table settings, click "Stop tracking" in the add-on, or delete the named ranges beginning with "WIS_DT_" (Data → Named ranges).</li>
         <li>To delete scenarios, delete them in the add-on's Scenarios tab.</li>
@@ -62,14 +86,14 @@
         <li>To ask us to delete your order or support records, email <a href="mailto:cellwiselabs@gmail.com">cellwiselabs@gmail.com</a>. Some records may need to be kept for tax and legal reasons.</li>
       </ul>
 
-      <h2>9. Children</h2>
+      <h2>11. Children</h2>
       <p>What-If Studio is not directed at children under 13, and we do not knowingly collect information from them.</p>
 
-      <h2>10. Changes</h2>
+      <h2>12. Changes</h2>
       <p>If we change this policy, we'll update the date at the top of this page. Significant changes will be noted on our website.</p>
 
-      <h2>11. Contact</h2>
-      <p>Questions about privacy: <a href="mailto:cellwiselabs@gmail.com">cellwiselabs@gmail.com</a>.</p>
+      <h2>13. Contact</h2>
+      <p>Questions about privacy: <a href="mailto:cellwiselabs@gmail.com">cellwiselabs@gmail.com</a> or <a href="mailto:support@cellwiselabs.com">support@cellwiselabs.com</a>.</p>
     </div>
   </main>
 
